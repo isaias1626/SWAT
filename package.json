@@ -23,3 +23,6 @@
     "build": "[my-framework] build --output public"
   }
 }
+{
+  "packageManager": "pnpm@7.5.1"
+}

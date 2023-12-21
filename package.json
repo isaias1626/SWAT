@@ -18,3 +18,8 @@
     "sass": "^1.69.5"
   }
 }
+{
+  "scripts": {
+    "build": "[my-framework] build --output public"
+  }
+}

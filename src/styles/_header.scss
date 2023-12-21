@@ -1,0 +1,63 @@
+@use 'variaveis';
+
+.main {
+    margin-top: 75vh;
+    margin-bottom: 70px;
+
+    &__nav__list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        justify-content: center;
+
+        .list__link {
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+            color: variaveis.$corTexto;
+            font-size: 14pt;
+            letter-spacing: 0.5px;
+            padding: 10px 10px;
+            font-family: 'poppins', sans-serif;
+            transition: 0.3s ease-in;
+        }
+
+        a::before,
+        a:after{
+            content: "";
+            position: absolute;
+            height: 3px;
+            width: 0%;
+            background-color: blue;
+            transition: 0.5s;
+        }
+        
+        a:after {
+            z-index: -1;
+            left: 0;
+            bottom: 0;
+        }
+        
+        a:before {
+            right: 0;
+            top: 0px;
+        }
+        
+        a:hover {
+            color: variaveis.$corTextosPrincipal;
+            text-shadow: 0 0 15px variaveis.$corTextosPrincipal;
+            font-weight: 700;
+            font-size: 16pt;
+            transition: 0.3s ease-in;
+        }
+        
+        a:hover:after,
+        a:hover:before {
+            width: 100%;
+        }
+    }
+}
+
+
+

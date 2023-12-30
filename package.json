@@ -2,7 +2,7 @@
   "name": "swat",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "dev": "gulp watch",
     "build": "gulp",
@@ -17,12 +17,4 @@
     "gulp-sass": "^5.1.0",
     "sass": "^1.69.5"
   }
-}
-{
-  "scripts": {
-    "build": "[my-framework] build --output public"
-  }
-}
-{
-  "packageManager": "pnpm@7.5.1"
 }

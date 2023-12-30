@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "gulp watch",
     "build": "gulp",
+    "build": "[my-framework] build --output public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
